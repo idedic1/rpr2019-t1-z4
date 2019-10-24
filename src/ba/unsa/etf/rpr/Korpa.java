@@ -3,7 +3,7 @@ package ba.unsa.etf.rpr;
 public class Korpa {
     private Artikl[] niz;
     final int BROJ_ARTIKALA=50;
-    private static int brEl=0;
+    private int brEl=0;
     public Korpa(){
         niz=new Artikl[BROJ_ARTIKALA];
     }
@@ -29,8 +29,8 @@ public class Korpa {
         }
         return izbaceni;
     }
-    public double dajUkupnuCijenuArtikala(){
-        double suma=0;
+    public int dajUkupnuCijenuArtikala(){
+        int suma=0;
         for(int i=0;i<this.brEl;i++){
             suma=suma+this.niz[i].cijena;
         }

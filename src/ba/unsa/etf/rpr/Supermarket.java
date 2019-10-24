@@ -4,7 +4,7 @@ public class Supermarket {
 
     final int BROJ_ARTIKALA=1000;
     private Artikl[] nizArtikala=null;
-    private static int brEl=0;
+    private  int brEl=0;
 
 
 
